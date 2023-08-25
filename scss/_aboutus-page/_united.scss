@@ -1,0 +1,120 @@
+.united {
+  padding-bottom: 168px;
+}
+.united__wrapper {
+  padding-left: 85px;
+}
+.united__title {
+  color: #83888F;
+  @include stil-title;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+.united__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.united__item {
+  max-width: 285px;
+  width: 100%;
+  &:nth-child(1) .united__mintitle::before {
+    background-image: url("../../images/Combined\ Shape-1.svg");
+  }
+  &:nth-child(3) .united__mintitle::before {
+    background-image: url("../../images/Combined\ Shape-2.svg");
+  }
+}
+.united__mintitle {
+  display: flex;
+  flex-direction: column;
+  color: #333D4B;
+  @include stil-title;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 36px; 
+  margin-top: 0;
+  margin-bottom: 24px;
+  &::before {
+    display: block;
+    width: 51px;
+    height: 50px;
+    background-image: url("../../images/Combined\ Shape.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 45px;
+    content: "";
+  }
+}
+.united__minlist {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.listadress {
+  font-style: normal;
+}
+.listadress__item {
+  color: #333D4B;
+  line-height: 26px; 
+  margin: 0;
+}
+.listadress__link {
+  text-decoration: none;
+  color: #333D4B;
+} 
+@media only screen and (max-width: 1000px) {
+  .united__wrapper {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 40px;
+  }
+  .united__wrapper {
+    padding-left: 0;
+  }
+  .united__list {
+    column-gap: 10px;
+  }
+  .united__mintitle {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 24px;
+  }
+  .united__wrapper {
+    padding-left: 0;
+  }
+  .united__title {
+    text-align: center;
+  }
+
+  .united__mintitle {
+    font-size: 28px;
+    text-align: center;
+    &::before {
+      margin: 0 auto;
+      margin-bottom: 47px;
+    }
+  }
+  .united__list {
+    flex-direction: column;
+    column-gap: 10px;
+    
+  }
+  .united__item {
+    margin-bottom: 80px;
+  }
+  .listadress__item {
+    text-align: center;
+  }
+}

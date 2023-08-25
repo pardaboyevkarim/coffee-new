@@ -1,0 +1,122 @@
+.collection {
+  padding-bottom: 188px;
+}
+.collection__bg {
+  background-image: url("./images/collectionbg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left 0px top 0;
+  margin: 0 85px;
+}
+
+.collection__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 126px;
+  column-gap: 30px;
+  
+}
+.collection__wrapper {
+  flex-direction: row;
+}
+.collection__wrapperwrap {
+  max-width: 255px;
+}
+
+.collection__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 71px;
+}
+.collection__titlee {
+  color: #333D4B;
+  text-align: center;
+  font-family: var(--main-font-famil);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.collection__text {
+  color: #333D4B;
+  text-align: center;
+  line-height: 26px;
+  margin: 0; 
+}
+@media only screen and (max-width: 1035px) {
+  .collection__wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collection {
+    padding-bottom: 144px;
+  }
+  .collection__bg {
+    margin: 0px;
+  }
+  .collection__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 47px;
+    padding-top: 80px;
+    margin-left: 58px;
+  }
+  .collection__wrapperwrap {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+   max-width: 573px;
+    margin-bottom: 0;
+    
+  }
+  .collection__wrapwrapper {
+    max-width: 282px;
+  }
+  .collection__titlee {
+    text-align: start;
+  }
+  .collection__img {
+    max-width: 255px;
+    margin-bottom: 0;
+  }
+  .collection__text {
+    text-align: start;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+/* mabilni start  */
+@media only screen and (max-width: 600px) {
+  .collection__wrapperwrap {
+    column-gap: 0;
+  }
+  
+  .collection__img {
+    max-width: 200px;
+    
+  }
+ 
+}
+@media only screen and (max-width: 550px) {
+  .collection__wrapper {
+    margin-left: 0;
+  }
+    .collection__wrapperwrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     max-width: 573px;
+     margin: 0 auto;
+      
+    }
+  .collection__titlee {
+    text-align: center;
+  }
+  .collection__text {
+    text-align: center;
+  }
+}
