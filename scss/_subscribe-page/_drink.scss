@@ -51,9 +51,11 @@ cursor: pointer;
   min-width: 18px;
   height: 12px;
   background-image: url("../../images/iconpagetou.svg");
-  // background-position: center;
-  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-left: 30px;
   transform: rotateX(180deg);
+  margin-left: auto;
   content: "";
 }
 &:hover {
@@ -178,9 +180,7 @@ margin-right: 40px;
 .list {
   flex-direction: column;
 }
-.drink__title::after {
-  margin-left: 30px;
-}
+
 }
 @media only screen and (max-width: 500px) {
   .drink__title {
